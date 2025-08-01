@@ -1,0 +1,197 @@
+<!DOCTYPE html> <!--Document Declaration-->
+<html>
+    <head>
+        <title>Binary/Multiple Star System Gallery</title>
+        <style>
+            body {
+                background-color: gainsboro
+            }
+            
+            .title {
+                text-align: center;
+            }
+            .subtitle {
+                text-align: center;
+            }
+            .background{
+                text-align: center;
+            }
+            
+            .page_desc {
+                text-align: center;
+                ;
+            }
+            .star_img2{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .calc{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .calcII{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .images{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <a class = "Home" href = "index.html"><b>Home</b></a>
+        <h1 class = "title">Binary/Multiple Star System Gallery</h1>
+        <h2 class = "subtitle">5 Inch Celestron Reflector</h2>
+        <p class = "background"><b>It's estimated that 80% of the stars in the Milky Way exist in binary or multiple stellar systems.</b> 
+            <br>
+            That is, 80% or more stars have a stellar companion gravitationally bound in an orbit or through a common proper motion (explained below).</p>
+        <p class = "page_desc">Below is an selected image gallery of star systems I've captured starting around late-2022. All images were captured using a 5-inch (127mm) Celestron Reflector and an iPhone 14 (quite a rudimentary setup). The system name, spectral types, apparent magnitudes, distance in light years, angular separation in arcseconds, physical separation in AU </p>
+        <hr>
+        <h2>Information Index</h2>
+            <p><b>Stellar Components:</b> Each star in a binary/multiple system is referred to as a component, with the brightest component laballed as "A", going down the alphabet as brightness decreases. Ex) Mizar A and Mizar B</p>
+            <p><b>Angular Separation:</b> The angle between the lines of sight to two stars, usually measured in arcseconds (1/3600th of a degree).</p>
+            <p><b>Physical Separation:</b> The actual distance between two stars in a binary/multiple system, usually measured in astronomical units (AU, Earth-Sun Distance).</p>
+            <p><b>Apparent Magnitude:</b> Measure of a star's brightness seen from Earth, with smaller numbers indicating a brighter star. A difference of one in apparent magnitude roughly equals a 2.512x increase in brightness.</p>
+            <p><b>Other Information:</b> Spectral types are also listed below (ex. K7V). Position angles will not be listed due to my setup being unable to measure them precisely.<br>Many of these star systems have closer components not visible through optical telescopes. Due to this, only information on the visible components is presented.</p>
+            <h3>Types of Star Systems</h3>
+            <ul>
+                <li><b>Physical Binary:</b> Two stars that are gravitationally bound and orbit each other.</li>
+                <li><b>Optical Binary:</b> Two stars that appear close together in the sky but are not physically related.</li>
+                <li><b>Common Proper Motion:</b> Stars that move together through space but may not be gravitationally bound.</li>
+                <p>Note that it is often difficult to distingush between Physical and CPM systems.</p>
+            </ul>
+            <img src="images/doublestar.png" alt="Double Star System" width = "631" height = "150" class="star_img2">
+        <h3><b>How is the physical separation calculated?</b></h3>
+        
+        <div class = "calc">
+            <p>From the small angle formula,<br>knowing distance and angular separation, we obtain:</p>
+            <img src="images/calc.png" alt="Small Angle Formula" width = "250" height = "100" class="calcimg">    
+        </div>
+        <hr>
+        <div class = "calcII">
+            <p>For the formula above, we are assuming the distance between the stars is negligible.<br>However, for other cases, we must use the law of cosines to determine a physical distance:</p>
+            <img src="images/calcII.png" alt="Law of Cosines" width = "500" height = "100" class="calcimg">
+        </div>
+        <hr>
+        <div class = "images">
+            
+            <div class = "36Oph">
+                <p><b>36 Ophiuchi AB</b><br>7/21/2025<br>Type: Physical<br>AngSep: 5.1"<br>PhySep: ~30.3 AU<br>Mag: 5.1, 5.1<br>Dist: ~19.4 ly<br>SpecType: K2V, K1V</p>
+                <img src="images/36Oph.jpg" alt="36 Ophiuchi AB" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "EtaCass">
+                <p><b>Eta Cassiopeiae</b><br>7/21/2025<br>Type: Physical<br>AngSep: 13.4"<br>PhySep: ~79.5 AU<br>Mag: 3.5, 7.4<br>Dist: ~19.4 ly<br>SpecType: G1V, K7V</p>
+                <img src="images/EtaCass.jpg" alt="Eta Cassiopeiae" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "95Her">
+                <p><b>95 Hercules</b><br>6/24/2025<br>Type: Physical<br>AngSep: 6.4"<br>PhySep: ~845 AU<br>Mag: 4.9, 5.2<br>Dist: ~432 ly<br>SpecType: A2IV, G5III</p>
+                <img src="images/95Her.jpg" alt="95 Hercules" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "GVir">
+                <p><b>Gamma Virginis (Porrima)</b><br>6/12/2025<br>Type: Physical<br>AngSep: 3.5"<br>PhySep: ~40.8 AU<br>Mag: 3.5, 3.5<br>Dist: ~38.1 ly<br>SpecType: F0V, F0V</p>
+                <img src="images/GVir.jpg" alt="Gamma Virginis (Porrima)" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "ICnc">
+                <p><b>Iota Cancri</b><br>5/13/2025<br>Type: CPM<br>AngSep: 30.6"<br>PhySep: ~40.8 AU<br>Mag: 4.1, 6.0<br>Dist: ~337 ly(?)<br>SpecType: G8III, A2V</p>
+                <img src="images/ICnc.jpg" alt="Iota Cancri" width="200" height="200" class="star_img">
+            </div>
+            
+        </div>
+
+
+        <div class = "images">
+            
+            <div class = "GDel">
+                <p><b>Gamma Delphini</b><br>9/15/2024<br>Type: Physical<br>AngSep: 8.8"<br>PhySep: ~306.8 AU<br>Mag: 4.3, 5.0<br>Dist: ~114 ly<br>SpecType: F7V, K1IV</p>
+                <img src="images/GDel copy.jpg" alt="Gamma Delphini" width="200" height="200" class="star_img">
+            </div>
+            
+            <div class = "GAnd">
+                <p><b>Gamma Andromedae (Almach)</b><br>9/1/2024<br>Type: Physical<br>AngSep: 9.5"<br>PhySep: ~1141.7 AU<br>Mag: 2.3, 5.0<br>Dist: ~393 ly<br>SpecType: K2IIb, B8V</p>
+                <img src="images/GAnd.jpg" alt="Gamma Andromedae (Almach)" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "GLeo">
+                <p><b>Gamma Leonis (Algieba)</b><br>1/5/2024<br>Type: Physical<br>AngSep: 4.7"<br>PhySep: ~186.8 AU<br>Mag: 2.4, 3.6<br>Dist: ~130 ly<br>SpecType: K0III, G7III</p>
+                <img src="images/GLeo.jpg" alt="Gamma Leonis (Algieba)" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "AGem">
+                <p><b>Alpha Geminorum (Castor)</b><br>11/12/2023<br>Type: Physical<br>AngSep: 5.6"<br>PhySep: ~85.6 AU<br>Mag: 1.9, 3.0<br>Dist: ~50 ly<br>SpecType: A0V, A4V</p>
+                <img src="images/AGem.jpg" alt="Alpha Geminorum (Castor)" width="200" height="200" class="star_img">
+            </div>
+
+            
+            <div class = "BSco">
+                <p><b>Beta Scorpii</b><br>8/12/2023<br>Type: CPM<br>AngSep: 13.4"<br>PhySep: ~1643.1 AU<br>Mag: 2.6, 4.5<br>Dist: ~400 ly<br>SpecType: B1V, B2V</p>
+                <img src="images/BSco.jpg" alt="Beta Scorpii" width="200" height="200" class="star_img">
+            </div>
+
+
+        </div>
+           
+
+        <div class = "images">
+            
+            <div class = "31Dra">
+                <p><b>31 Draconis</b><br>7/11/2023<br>Type: Physical<br>AngSep: 29.6"<br>PhySep: ~??? AU<br>Mag: 4.6, 5.6<br>Dist: ~74-75 ly<br>SpecType: F5IV, F8V</p>
+                <img src="images/31Dra.jpg" alt="31 Draconis" width="200" height="200" class="star_img">
+            </div>
+            
+            
+            <div class = "Mizar">
+                <p><b>Mizar</b><br>7/4/2023<br>Type: Physical<br>AngSep: 14.4"<br>PhySep: ~377.9 AU<br>Mag: 2.2, 3.9<br>Dist: ~85 ly<br>SpecType: A2V, A7V</p>
+                <img src="images/Mizar.jpg" alt="Mizar AB" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "CorCaroli">
+                <p><b>Cor Caroli</b><br>6/19/2023<br>Type: Physical(?)<br>AngSep: 19.3"<br>PhySep: ~607.9 AU<br>Mag: 2.9, 5.5<br>Dist: ~103 ly<br>SpecType: A0V, F2V</p>
+                <img src="images/CorCaroli.jpg" alt="Alpha Canum Venaticorum (Cor Caroli)" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "16Cygni">
+                <p><b>16 Cygni</b><br>3/26/2023<br>Type: CPM<br>AngSep: 39.7"<br>PhySep: ~835.2 AU<br>Mag: 6.0, 6.2<br>Dist: ~68.8 ly<br>SpecType: G1.5V, G2.5V</p>
+                <img src="images/16Cyg.jpg" alt="16 Cygni" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "61Cygni">
+                <p><b>61 Cygni</b><br>11/25/2022<br>Type: Physical<br>AngSep: 32.0"<br>PhySep: ~111.6 AU<br>Mag: 5.2, 6.0<br>Dist: ~11.4 ly<br>SpecType: K5V, K7V</p>
+                <img src="images/61Cyg.jpg" alt="61 Cygni" width="200" height="200" class="star_img">
+            </div>
+
+
+        </div>
+        
+        <div class = "images">
+
+            <div class = "Sirius">
+                <p><b>Sirius</b><br>10/22/2023<br>Type: Physical<br>AngSep: 11.3"<br>PhySep: 29.7 AU<br>Mag: -1.47, 8.4<br>Dist: ~8.6 ly<br>SpecType: A1V, DA2</p>
+                <img src="images/Sirius.jpg" alt="Sirius" width="200" height="200" class="star_img">
+            </div>
+
+            <div class = "BetaCygni">
+                <p><b>Beta Cygni (Albireo)</b><br>9/9/2022<br>Type: Optical<br>AngSep: 34.6"<br>PhySep: ~??? AU<br>Mag: 3.2, 4.7<br>Dist: ~330-434 ly<br>SpecType: K3II, B8III</p>
+                <img src="images/BCyg.jpg" alt="Beta Cygni (Albireo)" width="200" height="200" class="star_img">
+            </div>
+
+        </div>
+
+        <!-- Note: Add the SSP CUB 2024 Systems at the end-->
+         <!-- Note: Add multi-systems at the end
+          Mizar, Castor, HD 594, Rho Oph, 36 Ophiuchi, Epsilon Lyrae, etc-->
+
+        </body>
+</html>
