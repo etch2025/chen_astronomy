@@ -43,9 +43,16 @@
                 font-size: 25px;
             }
 
-            .count_table, th, td {
-                border: 1px solid black;
+            .count_table table {
+            border-collapse: collapse;
             }
+
+            .count_table th, td {
+                border: 1px solid black;
+                padding: 8px;
+            }
+
+            
         </style>
     </head>
     <body>
@@ -54,90 +61,69 @@
         <hr>
 
 
-        <div class="options">
-            <div style = "text-align: center;">
-                <a class = "link1" href = "dso.html">Deep Sky Objects Image Gallery</a>
-                <img src="images/mainpage/pillars.jpg" alt="Pillars of Creation" width="375" height="300" class="dso_img">
-            </div>
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;">
     
+        <div style = "margin-left: 100px;">
+            <div class="options">
+                <div style = "text-align: center;">
+                    <a class = "link1" href = "dso.html">Deep Sky Objects Image Gallery</a>
+                    <img src="images/mainpage/pillars.jpg" alt="Pillars of Creation" width="375" height="300" class="dso_img">
+                </div>
 
-            <div style = "text-align: center;">
-                <a class = "link2" href = "binarystars.html">Binary/Multiple Star Systems Image Gallery</a>
-                <img src="images/mainpage/almach(2).jpg" alt="Almach" width="375" height="300" class="star_img">
+                <div style = "text-align: center;">
+                    <a class = "link2" style = "font-size: 20px;" href = "binarystars.html">Binary/Multiple Star Systems Image Gallery</a>
+                    <img src="images/mainpage/almach(2).jpg" alt="Almach" width="375" height="300" class="star_img">
+                </div>
             </div>
 
-            
+            <div class="options2">
+                <div style="text-align: center;">
+                    <a class="link3" href="otherimages.html">General Image Gallery</a>
+                    <br>
+                    <img src="images/mainpage/Saturn.jpg" alt="Saturn" width="375" height="300" class="otherlabel_img">
+                </div>
+                <div style="text-align: center;">
+                    <a class="link4" href="tests.html">Science Olympiad Tests</a>
+                    <br>
+                    <img src="images/mainpage/scioly.png" alt="Science Olympiad Logo" width="300" height="300" class="otherlabel_img">
+                </div>
+            </div>
         </div>
 
-        <div class="options2">
-            <div style="text-align: center;">
-                <a class="link3" href="otherimages.html">General Image Gallery</a>
-                <br>
-                <img src="images/mainpage/Saturn.jpg" alt="Saturn" width="375" height="300" class="otherlabel_img">
-            </div>
-            <div style="text-align: center;">
-                <a class="link4" href="tests.html">Science Olympiad Tests</a>
-                <br>
-                <img src="images/mainpage/scioly.png" alt="Science Olympiad Logo" width="300" height="300" class="otherlabel_img">
-            </div>
-        </div>
-        
-        <div class = "count_table" style="display: flex; justify-content: center; text-align: center;">
-            <table style="width: 700px; font-size: 25px;" >
+        <div class="count_table" style="text-align: center;">
+            <table style="width: 500px; font-size: 25px; border-collapse: collapse; margin-top: 100px; margin-right: 100px;">
                 <tr>
                     <th>Celestial Object/Event</th>
                     <th>Count</th>
                 </tr>
-
-                <tr>
-                    <td>Binary/Multiple Star Systems</td>
-                    <td>74</td>
-                <tr>
-                    <td>Open Star Clusters</td>
-                    <td>10</td>
-                </tr>
-                
-                <tr>
-                    <td>Globular Star Clusters</td>
-                    <td>1</td>
-                </tr>
-
-                <tr>
-                    <td>Nebulae</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Galaxies</td>
-                    <td>4</td>
-                </tr>
-
-                <tr>
-                    <td>Northern Lights/Aurora Borealis</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Lunar Eclipses</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Solar Eclipses</td>
-                    <td>1</td>
-                </tr>
-
-                <tr>
-                    <td>Asteroids</td>
-                    <td>1</td>
-                </tr>
-
-                <tr>
-                    <td>Comets</td>
-                    <td>1</td>
-                </tr>
-                
+                <tr><td>Binary/Multiple Star Systems</td><td>74</td></tr>
+                <tr><td>Open Star Clusters</td><td>10</td></tr>
+                <tr><td>Globular Star Clusters</td><td>1</td></tr>
+                <tr><td>Nebulae</td><td>7</td></tr>
+                <tr><td>Galaxies</td><td>4</td></tr>
+                <tr><td>Northern Lights/Aurora Borealis</td><td>2</td></tr>
+                <tr><td>Lunar Eclipses</td><td>2</td></tr>
+                <tr><td>Solar Eclipses</td><td>1</td></tr>
+                <tr><td>Asteroids</td><td>1</td></tr>
+                <tr><td>Comets</td><td>1</td></tr>
             </table>
         </div>
+    </div>
+    <hr>
+    <div class = "setups" style = "display: flex; justify-content: center; gap: 50px; margin-top: 10px; margin-bottom: 50px;">
+        <div class = "images">
+            <p><b>5 Inch Celestron Reflector</b><br>Michigan</p>
+            <img src="images/mainpage/novi.png" alt="5 Inch Celestron" width="500" height="375" class="star_img">
+        </div>
+
+        <div class = "images">
+            <p><b>20 Inch Planewave Reflector</b><br>Summer Science Program - CU Boulder - Team 5</p>
+            <img src="images/mainpage/cub.png" alt="20 Inch Planewave" width="500" height="375" class="star_img">
+        </div>
+    </div>
+    <hr>
+    <h2 class = "versionhistory" style = "text-align: center;">Version History</h2>
+    <p style = "margin-left: 250px;"><b>8/3/2025:</b> Website launch</p>
 
 
     </body>
