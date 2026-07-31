@@ -27,22 +27,26 @@
         <hr style = "height: 1px; background-color: black;">
         
         <div>
-            <h1 class = "title">Binary Star Orbit Fitter (WIP)</h1>
-            <p class = "title">Last Updated: 7/17/2026</p>
+            
+            <h1 class = "title"><a style = "color: blue;"  target = "_blank" href = "https://etch2025-binarystar-orbit-modeller-webapp-app-t2zmwb.streamlit.app/">Binary Star Orbit Modeller</a></h1>
+            <p class = "title">Last Updated: 7/31/2026</p>
             <div style = "justify-content: center; display: flex; flex-direction: column; align-items: center;">
-                <p style = "margin-left: 50px; margin-right: 50px; font-size: 25px;">Takes observation data inputs of angular separation and position angle and plots the fitted sky-projected and true orbit using a non-linear least squares and Thiele-Innes method.<br>Modules: Matplotlib, NumPy, and SciPy<br>
+                <p style = "margin-left: 50px; margin-right: 50px; font-size: 25px;">Orbit fitter for binary stars by iterating over the Thiele-Innes Method<br>
                     </p>
                 <div>
                     <div style = "display: flex; justify-content: center; gap: 30px;" >
-                        <a style = "font-size: 35px; color: blue;" target="_blank"  href = "https://github.com/etch2025/orbit_fitter">Github</a>
-                        <a style = "font-size: 35px; color: blue;" target="_blank"  href = "https://github.com/etch2025/orbit_fitter/blob/main/README.md">Usage/README</a>
+                        <a style = "font-size: 25px; color: blue;" target="_blank"  href = "https://github.com/etch2025/binarystar_orbit_modeller_webapp/tree/main">Web App Github</a>
+                        <a style = "font-size: 25px; color: blue;" target="_blank"  href = "https://github.com/etch2025/orbit_fitter">Local Version Github</a>
+                        
                     </div>
                     <div style = "justify-content: center; display: flex; margin-bottom: 10px;">
                         <img src = "images/other/orbit_fit_best_Sirius (HD 48915)_1000_10_True.png" alt = "Binary Simulator" width = "1000" height = "537">
                     </div>
                     <div>
-                        <img src = "images/other/fitted_periods_cost_Sirius (HD 48915)_1000_10_True.png" alt = "Binary Simulator" width = "526" height = "376">
-                        <img src = "images/other/fitted_eccents_cost_Sirius (HD 48915)_1000_10_True.png" alt = "Binary Simulator" width = "526" height = "376">
+                        <img src = "images/other/fitted_periods_cost_Sirius (HD 48915)_1000_10_True.png" alt = "Binary Simulator" width = "450" height = "290">
+                        <img src = "images/other/fitted_sma_cost_Sirius (HD 48915)_1000_10_True.png" alt = "Binary Simulator" width = "450" height = "290">
+                        <img src = "images/other/fitted_eccents_cost_Sirius (HD 48915)_1000_10_True.png" alt = "Binary Simulator" width = "450" height = "290">
+                        
                     </div>
                 </div>
 
@@ -50,7 +54,7 @@
         </div>
         <hr>
         <div>
-            <h1 class = "title">Eclipsing Binary Stars Simulator (WIP)</h1>
+            <h1 class = "title">Eclipsing Binary Stars Simulator</h1>
             <p class = "title">Last Updated: 5/28/2026</p>
             <div style = "display: flex; justify-content: center; flex-direction: column; align-items: center;">
                 <p style = "margin-left: 50px; margin-right: 25px; font-size: 25px;">Simulates a light curve of eclipsing binary stars<br>Uses Matplotlib and NumPy<br><br><b>Outputs</b><br>- Light Curve and Orbital Diagram<br>- Eclipse Luminosity and Duration<br>- Points of Contact<br>- Impact Parameter<br>- L1 Point (Roche Lobe Overflow)<br><br><b>Assumptions</b><br>- Uniform Luminosity Distribution (No limb darkening)<br>- Circular Orbit (e = 0)<br>- Celestial bodies m1 and m2 are spherical with circular projected areas</p>
